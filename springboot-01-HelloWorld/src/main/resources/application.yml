@@ -1,0 +1,35 @@
+person:
+  last_name: shf${random.uuid}
+  age: 3
+  happy: true
+  birth: 2022/3/6
+  maps: {k1: v1,k2: v2}
+  lists:
+    - code
+    - music
+    - girl
+  dog:
+    name: 旺财${person.hello:hello}
+    age: 3
+
+dog:
+  name: ${random.uuid}
+  age: 22
+
+server:
+  port: 8081
+spring:
+  profiles:
+    active: dev
+
+---
+server:
+  port: 8082
+spring:
+  profiles: dev
+
+---
+server:
+  port: 8083
+spring:
+  profiles: test
