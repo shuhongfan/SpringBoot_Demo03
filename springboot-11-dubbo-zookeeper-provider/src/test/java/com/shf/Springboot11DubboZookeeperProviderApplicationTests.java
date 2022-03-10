@@ -1,0 +1,13 @@
+package com.shf;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class Springboot11DubboZookeeperProviderApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
