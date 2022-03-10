@@ -1,0 +1,6 @@
+#邮件发送
+spring:
+  mail:
+    username: shuhongfan@88.com
+    password: fbWVqSzjXiw8vZPW
+    host: smtp.88.com

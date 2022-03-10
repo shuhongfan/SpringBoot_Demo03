@@ -1,0 +1,16 @@
+#springboot 所有的配置类，都有一个自动配置类  RedisAutoConfiguration
+#自动配置类都会绑定一个properties配置文件  RedisProperties
+#  @ConditionalOnMissingBean(name = "redisTemplate") 当redisTemplate这个bean不存在这个自动配置类就生效
+
+#  RedisTemplate<Object, Object> template = new RedisTemplate<>();
+#默认的RedisTemplate没有过多的设置，redis对象都是需要序列化
+#两个泛型都是 object，object的类型，我们后使用都需要强制转换《string，object》
+
+#  public StringRedisTemplate stringRedisTemplate(RedisConnectionFactory redisConnectionFactory) {
+#由于string是redis中最常用的类型，所以说单独提出来一个bean
+
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    
